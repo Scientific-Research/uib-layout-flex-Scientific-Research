@@ -1,0 +1,60 @@
+/* Use flexbox to align all divs in a row. Use wrap so that the divs appear on multiple rows. Center the rows in the container*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* erste Lösung */
+/* .box { zwei class, ohne main, ohne body
+  height: 100px;
+  width: 200px;
+  background-color: darkgray;
+  margin: 1em;
+  border: 2px solid red;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  /* height: 100vh; */
+/* }  */
+
+/* zweite Lösung */
+/* div { Parent ist main ohne body
+  height: 100px;
+  width: 200px;
+  background-color: darkgray;
+  margin: 1em;
+  border: 2px solid red;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+} */
+
+/* dritte Lösung */
+div {
+  /*  Parent ist body ohne main*/
+  height: 100px;
+  width: 200px;
+  background-color: darkgray;
+  margin: 1em;
+  border: 2px solid red;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
